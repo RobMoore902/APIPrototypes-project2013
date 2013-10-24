@@ -19,7 +19,7 @@ $("#search_button").click(function() {
            })
          });
 		 
-		$.getJSON(SEARCH_ARTIST_URL + search_term, function(tracks) {
+		$.getJSON(SEARCH_YOUTUBE_URL + search_term, function(tracks) {
           $(tracks).each(function(track) {
           	$("#YTresults").append("<p>"+this.title+"</p>");
            })
