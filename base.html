@@ -123,9 +123,14 @@
 
         <!-- Search form -->
         <form class="navbar-search pull-left">
-          <input type="text" class="search-query" placeholder="Search">
+          <input type="text" id="search_input" class="search-query" placeholder="Search"> 
         </form>
 
+        <!-- Search Options-->
+        <button type="button" id="search_button">Search</button>
+        <input name="embed" id="embed_input" value="false" type="checkbox">Embed?</input>
+        <input name="limit" id="limit_input" type="text">Limit</input>
+        
         <!-- Links -->
         <ul class="nav pull-right">
           <li class="dropdown pull-right">            
@@ -450,8 +455,9 @@
                 </div>
                 <div class="widget-content">
                   <div class="padd">
-                    <!-- Content goes here -->
 
+                    <!-- Soundcloud results -->
+                      <div id="soundcloud_results"></div>
                   </div>
                   <div class="widget-foot">
                     <!-- Footer goes here -->
@@ -543,6 +549,15 @@
 <script src="js/plugins/filter.js"></script> <!-- Filter for support page -->
 <script src="js/plugins/custom.js"></script> <!-- Custom codes -->
 <script src="js/plugins/charts.js"></script> <!-- Charts & Graphs -->
+
+<!-- SDKs -->
+<script src="https://connect.soundcloud.com/sdk.js"></script>
+
+<!-- JS for API calls -->
+<script src="js/soundcloud.js"></script>
+
+<!-- Glue file to call the different API files -->
+<script src="js/glue.js"></script>
 
 </body>
 </html>
