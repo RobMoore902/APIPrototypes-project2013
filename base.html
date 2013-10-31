@@ -127,10 +127,14 @@
         </form>
 
         <!-- Search Options-->
-        <button type="button" id="search_button">Search</button>
-        <input name="embed" id="embed_input" value="false" type="checkbox">Embed?</input>
-        <input name="limit" id="limit_input" type="text">Limit</input>
         
+		<form class="navbar-search pull-left">
+			<input name="embed" id="embed_input" value="false" type="checkbox">Embed?</input>
+		
+			<input name="limit" id="limit_input" type="text" class="search-query" placeholder="Number of Results">Limit</input>
+			<button type="button" id="search_button">Search</button>
+        </form>
+		
         <!-- Links -->
         <ul class="nav pull-right">
           <li class="dropdown pull-right">            
@@ -434,7 +438,7 @@
                   <div class="clearfix"></div>
                 </div>
                 <div class="widget-content">
-                  <div class="padd">
+                  <div id="YTresults" class="padd">
                     <!-- Content goes here -->
 
                   </div>
