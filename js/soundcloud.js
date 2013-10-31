@@ -25,7 +25,9 @@ SC.initialize({
             {
               SC.oEmbed(this.uri, {iframe: true}, function(data){
                 var lol = $('<div/>');
+				console.log(data['html']);
                 lol.html(data['html']);
+				
                   $("#soundcloud_results").append(lol);
               });
             }
